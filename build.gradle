@@ -1,0 +1,39 @@
+plugins {
+	//id 'org.springframework.boot' version '2.3.0.RELEASE'
+	//id 'io.spring.dependency-management' version '1.0.9.RELEASE'
+	id 'java'
+}
+
+group = 'com.lpras'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+configurations.all {
+	//transitive = false
+}
+dependencies {
+	/*implementation 'org.springframework.boot:spring-boot-starter'
+	testImplementation('org.springframework.boot:spring-boot-starter-test') {
+		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+	}*/
+
+	testImplementation(
+			//'org.junit.jupiter:junit-jupiter-api:5.4.2',
+			'org.powermock:powermock-api-mockito2:2.0.7',
+			'org.powermock:powermock-module-junit4:2.0.7'
+	)
+	testRuntime(
+			'org.junit.jupiter:junit-jupiter-engine:5.6.2', // to run junit 5
+			'org.junit.vintage:junit-vintage-engine:5.6.2' // to run junit 3 or 4
+	)
+	
+}
+
+test {
+	//enabling junit5 gradle native support
+	useJUnitPlatform()
+}

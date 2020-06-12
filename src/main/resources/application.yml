@@ -1,0 +1,18 @@
+logging:
+  pattern:
+    console: "%clr %d %-5level %logger : %msg%n"
+  level:
+    root: DEBUG
+    jdk.event.security: WARN
+    org.springframework: WARN
+    org.apache.tomcat: ERROR
+    org.apache.catalina: WARN
+    org.mongodb.driver: WARN
+    org.springframework.bean: WARN
+    org.springframework.boot: WARN
+    org.springframework.web: WARN
+    com.lpras.springboot.powermock: DEBUG
+    org.hibernate: WARN
+    org.springframework.jdbc: WARN
+    org.springframework.test: INFO
+

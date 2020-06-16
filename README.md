@@ -19,3 +19,12 @@ https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-un
 https://www.baeldung.com/intro-to-powermock
 https://www.softwaretestinghelp.com/mock-private-static-void-methods-mockito/#:~:text=For%20Mockito%2C%20there%20is%20no,to%20avoid%20static%2Ffinal%20methods.
 
+Reference:
+https://www.journaldev.com/21816/mockito-tutorial
+https://www.petrikainulainen.net/programming/testing/junit-5-tutorial-running-unit-tests-with-gradle/
+https://www.baeldung.com/intro-to-powermock
+https://www.softwaretestinghelp.com/mock-private-static-void-methods-mockito/#:~:text=For%20Mockito%2C%20there%20is%20no,to%20avoid%20static%2Ffinal%20methods.
+
+Sonar and jacoco integration
+SonarQube can be running in local if docker not used
+https://tomgregory.com/how-to-measure-code-coverage-using-sonarqube-and-jacoco/

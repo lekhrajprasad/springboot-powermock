@@ -16,7 +16,7 @@ import static org.powermock.api.mockito.PowerMockito.whenNew;
 @RunWith(PowerMockRunner.class)
 //@PrepareForTest(fullyQualifiedNames = "com.lpras.springboot.powermockito.*")
 @PrepareForTest({CollaboratorWithFinalMethods.class})
-public class CollaboratorWithFinalMethodsTest {
+public class  CollaboratorWithFinalMethodsTest {
 
     @Test
     public void givenFinalMethods_whenUsingPowerMockito_thenCorrect() throws Exception {

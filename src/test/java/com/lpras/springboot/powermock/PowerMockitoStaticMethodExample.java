@@ -6,10 +6,12 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
 import org.powermock.api.mockito.PowerMockito;
+import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
-//@Ignore
+@Ignore
+@PowerMockIgnore
 @RunWith(PowerMockRunner.class)
 //@PrepareForTest(fullyQualifiedNames = "com.lpras.springboot.powermockito.*")
 @PrepareForTest({SomeSystem.class})
@@ -35,7 +37,7 @@ public class PowerMockitoStaticMethodExample {
 		// Stub static method startServiceStatic to start successfully
 		p("Call mockStatic SomeSystem.class to enable static mocking");
 		PowerMockito.mockStatic(SomeSystem.class);
-		
+
 		p("Stub static method startServiceStaticWay to return 1");
 		PowerMockito.when(SomeSystem.startServiceStaticWay(service))
 				.thenReturn(1);
